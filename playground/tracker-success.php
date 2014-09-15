@@ -85,6 +85,22 @@
        </div>
       </div>
       <img src="graph1.jpg" alt="Graph of improvements">
+      
+      
+      <div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+    Daily Reps Completed
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+    Daily Calorie Intake
+  </div>
+</div>
+
+
      </div>
        <div class="col-md-4">
           <h2>Fitness feedback</h2>

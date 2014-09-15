@@ -20,6 +20,12 @@
   <div class="jumbotron">
    <div class="container">
    	<h2>Log in:</h2>
+   	
+   	<div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>AYY</strong> Are you ready to login?
+</div>
+
      <form  role="form">
       <div class="form-group">
        <div class="row">
@@ -44,5 +50,10 @@
    <p style="font-size: 14px">&copy; Christopher L. Inglese 2014</p>
   </footer>
   </div>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
  </body>
 </html>

@@ -6,17 +6,14 @@
     <link href="jumbotron.css" rel="stylesheet">
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.php">Home</a>
-          <a class="navbar-brand" href="nutrition.php">Nutrition</a>
-          <a class="navbar-brand" href="fitness.php">Fitness</a>
-          <a class="navbar-brand" href="tracker.php">Tracker</a>
-          <a class="navbar-brand" href="about-us.php">About Us</a>
-        </div>
-      </div>
-    </div>
+  	
+    <ul class="nav nav-pills nav-stacked">
+  <li><a href="index.php">Home</a></li>
+  <li><a href="nutrition.php">Nut</a></li>
+  <li class="active"><a href="fitness.php">Fit</a></li>
+  <li><a href="tracker.php">Trak</a></li>
+  <li><a href="about-us.php">About</a></li>
+</ul>
 
     <div class="jumbotron">
       <div class="container">
@@ -49,5 +46,10 @@
         <p>&copy; Christopher L. Inglese 2014</p>
       </footer>
     </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

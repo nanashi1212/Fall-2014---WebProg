@@ -28,20 +28,21 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h2>(Recipe1)</h2>
+          <h2>(Recipe3)</h2>
           <p>(Description of the food.)</p>
-        </div>
        </div>
       </div>
+     </div>
 
-	<ul class="pagination pagination-lg">
-  <li class="disabled"><a href="#">&laquo;</a></li>
+	<ul class="pagination">
+  <li><a href="atkins1.php">&laquo;</a></li>
   <li><a href="atkins.php">1</a></li>
   <li><a href="atkins1.php">2</a></li>
   <li><a href="atkins2.php">3</a></li>
-  <li><a href="atkins1.php">&raquo;</a></li>
+  <li class="disabled"><a href="#">&raquo;</a></li>
 	</ul>
 	
+
       <hr>
 
       <footer>
