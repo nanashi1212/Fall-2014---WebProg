@@ -5,8 +5,8 @@
 			The tracking technology provided by Fitness Tracker allows the user to input data and recieve relative feedback on how to live a healthier life.
 		</p>
 		<div class="list-group">
-			<a href="tracker-login.php" class="list-group-item list-group-item-success"> <h4 class="list-group-item-heading">Log in</h3></a>
-			<a href="tracker-signup.php" class="list-group-item list-group-item-info"> <h4 class="list-group-item-heading">Sign up</h3></a>
+			<a href="?action=tracker-login" class="list-group-item list-group-item-success"> <h4 class="list-group-item-heading">Log in</h3></a>
+			<a href="?action=tracker-signup" class="list-group-item list-group-item-info"> <h4 class="list-group-item-heading">Sign up</h3></a>
 			<a href="#" class="list-group-item list-group-item-warning" data-toggle="modal" data-target="#myModal"> <h4 class="list-group-item-heading">Pop-up info</h3></a>
 		</div>
 

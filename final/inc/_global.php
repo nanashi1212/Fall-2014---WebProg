@@ -23,4 +23,3 @@ function FetchAll($sql){
 		
 		return $ret;	
 }
-?>
