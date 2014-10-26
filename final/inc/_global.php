@@ -13,6 +13,17 @@ function my_print($x){
 	?></pre><?
 }
 
+function insertUser($sql){
+	$conn = GetConnection();
+	$error = $conn->error;
+	if($error){
+		echo $error;
+	}else{
+		$conn->query($sql);
+	}
+}
+
+
 function FetchAll($sql){
 		$ret = array();
 		$conn = GetConnection();

@@ -13,7 +13,12 @@ $format = isset($_REQUEST['format']) ? $_REQUEST['format'] : 'web';
 include_once __DIR__ . '/../inc/_nav-switches.php';
 
 switch ($action . '_' . $method) {
-	//handle signin & signup here
+	case('account-created_POST'):
+		//handle signin & signup here
+		tracker::signup();
+		my_print($_POST);
+		$view = 'tracker/tracker-signup.php';
+		break;
 }
 
 if($controller != "tracker.php" && $controller != null){

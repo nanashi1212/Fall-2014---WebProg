@@ -3,18 +3,19 @@
 /**
  * 
  */
-class Food {
-	
-	public static function Get($id=null)
+class tracker 
+{
+	public static function signup()
 	{
-		$sql = "	SELECT * FROM 2014Fall_Food_Eaten
-		";
-		if($id){
-			$sql .= " WHERE id=$id ";
-			$ret = FetchAll($sql);
-			return $ret[0];
+		if(strcmp($_POST['password'],$_POST['password_reentered']) != 0){
+			echo "PASSWORDS DO NOT MATCH";
 		}else{
-			return FetchAll($sql);			
+		$sql = "INSERT INTO `WebTracker_Users` 
+		(`id`, `first_name`, `last_name`, `email`, `password`) 
+		VALUES ('NULL', '".($_POST['first_name'])."', '". ($_POST['last_name'])."', '"
+		 .($_POST['email'])."', '".($_POST['password'])."');";
+		 echo $sql;
+		 insertUser($sql);
 		}
 	}
 }

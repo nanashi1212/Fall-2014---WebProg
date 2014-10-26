@@ -13,7 +13,7 @@ $format = isset($_REQUEST['format']) ? $_REQUEST['format'] : 'web';
 include_once __DIR__ . '/../inc/_nav-switches.php';
 
 switch ($action . '_' . $method) {
-	//add fitness handlers later
+		//process input
 }
 
 if($controller != "fitness.php" && $controller != null){
