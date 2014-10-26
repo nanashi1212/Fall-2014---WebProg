@@ -82,7 +82,7 @@
 					</div>
 				</div>
 			</div>
-			<img src="graph1.jpg" alt="Graph of improvements">
+			<img src="../content/images/graph1.jpg" alt="Graph of improvements">
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
