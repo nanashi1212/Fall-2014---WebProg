@@ -31,68 +31,70 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	<!-- Indicators -->
-	<ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	</ol>
+<div class="container">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
 
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner">
-		<div class="item active">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					Calorie counter
-				</div>
-				<div class="panel-body">
-					<div class="well">
-						(description of tool aspect)
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Calorie counter
+					</div>
+					<div class="panel-body">
+						<div class="well">
+							(description of tool aspect)
+						</div>
 					</div>
 				</div>
+				<div class="carousel-caption">
+					...
+				</div>
 			</div>
-			<div class="carousel-caption">
-				...
-			</div>
-		</div>
 
-		<div class="item">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					Exersize analyzer
-				</div>
-				<div class="panel-body">
-					(description of tool aspect)
-				</div>
-			</div>
-			<div class="carousel-caption">
-				...
-			</div>
-		</div>
-
-		<div class="item">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					Fitness feedback
-				</div>
-				<div class="panel-body">
-					<div class="well">
+			<div class="item">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Exersize analyzer
+					</div>
+					<div class="panel-body">
+						<div class="well">
 						(description of tool aspect)
+						</div>
 					</div>
 				</div>
+				<div class="carousel-caption">
+					...
+				</div>
 			</div>
-			<div class="carousel-caption">
-				...
+
+			<div class="item">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Fitness feedback
+					</div>
+					<div class="panel-body">
+						<div class="well">
+							(description of tool aspect)
+						</div>
+					</div>
+				</div>
+				<div class="carousel-caption">
+					...
+				</div>
 			</div>
 		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
 	</div>
-
-	<!-- Controls -->
-	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-</div>

@@ -38,8 +38,7 @@
 			<a class="btn btn-default" href="?action=mediterranean" role="button">View recipes <span class="badge">3</span> &raquo;</a>
 		</p>
 	</div>
-</div>
-
+	
 <!--IMAGE THUMBNAILS NOT WORKING CORRECTLY-->
 <!--test code
 <div class="row">
