@@ -1,5 +1,7 @@
 <?php
 
+//rename as Controllers if errors occur
+
 //include_once __DIR__ . '/../inc/_all.php';
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
