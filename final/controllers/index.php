@@ -2,41 +2,43 @@
 //rename as 'Controllers' if errors occur
 include_once __DIR__ . '/../inc/_all.php';
 
+$view = isset($_REQUEST['view']) ? $_REQUEST['view'] : null;
+$controller=null;
+
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $method = isset($_POST['submit']) ? 'POST' : 'GET';
 $format = isset($_REQUEST['format']) ? $_REQUEST['format'] : 'web';
-$view 	= null;
 
+//importing nav-bar links
 include_once __DIR__ . '/../inc/_nav-switches.php';
 
 switch ($action . '_' . $method) {
 	case('atkins_GET'):
-		//change model
-		//change view
+		$controller = "nutrition.php";
+		$view = "nutrition/atkins.php";
 		break;
 	case('paleo_GET'):
-		//change model
-		//change view
+		$controller = "nutrition.php";
+		$view = "nutrition/paleo.php";
 		break;
 	case('mediterranean_GET'):
-		//change model
-		//change view
+		$controller = "nutrition.php";
+		$view = "nutrition/mediterranean.php";
 		break;
 	case('anaerobics_GET'):
-		//change model
-		//change view
+		$controller = "fitness.php";
+		$view = "fitness/aerobics.php";
 		break;
 	case('aerobics_GET'):
-		//change model
-		//change view
+		$controller = "fitness.php";
+		$view = "fitness/aerobics.php";
 		break;
 	
 	//tracker signup & signin included in '_nav-switches'
-	
-	//default page link
-	default:
-		$view = "index/index.php";
-		break;
+}
+
+if($controller != "index.php" && $controller != null){
+		header("Location: $controller?view=$view");
 }
 
 switch ($format) {

@@ -3,19 +3,21 @@
 include_once __DIR__ . '/../inc/_all.php';
 include_once __DIR__ . '/../Models/fitness.php';
 
+$view = isset($_REQUEST['view']) ? $_REQUEST['view'] : null;
+$controller=null;
+
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $method = isset($_POST['submit']) ? 'POST' : 'GET';
 $format = isset($_REQUEST['format']) ? $_REQUEST['format'] : 'web';
-$view 	= null;
 
 include_once __DIR__ . '/../inc/_nav-switches.php';
 
 switch ($action . '_' . $method) {
-	//no actions yet -- will add functionality later (adding exersizes, ect.)
-	//POST $method handled here here
-	
-	
-	//do not define default! (already defined in _nav-switches)
+	//add fitness handlers later
+}
+
+if($controller != "fitness.php" && $controller != null){
+		header("Location: $controller?view=$view");
 }
 
 switch ($format) {

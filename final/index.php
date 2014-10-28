@@ -1,4 +1,5 @@
 <?php
-	$tempVar = parse_url() . 'Controllers/tracker.php?action=index';
+	$tempVar = parse_url() . 'controllers/index.php?action=index';
     header("Location: $tempVar");
+	
 ?>
