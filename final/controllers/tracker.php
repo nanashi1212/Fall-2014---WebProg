@@ -1,8 +1,7 @@
 <?php
-
-//rename as Controllers if errors occur
-
-//include_once __DIR__ . '/../inc/_all.php';
+//rename as 'Controllers' if errors occur
+include_once __DIR__ . '/../inc/_all.php';
+include_once __DIR__ . '/../Models/tracker.php';
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $method = isset($_POST['submit']) ? 'POST' : 'GET';
