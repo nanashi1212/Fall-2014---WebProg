@@ -5,20 +5,20 @@
 			The tracking technology provided by Fitness Tracker allows the user to input data and recieve relative feedback on how to live a healthier life.
 		</p>
 		<div class="list-group">
-			<a href="?action=tracker-login" class="list-group-item list-group-item-success"> <h4 class="list-group-item-heading">Log in</h3></a>
-			<a href="?action=tracker-signup" class="list-group-item list-group-item-info"> <h4 class="list-group-item-heading">Sign up</h3></a>
-			<a href="#" class="list-group-item list-group-item-warning" data-toggle="modal" data-target="#myModal"> <h4 class="list-group-item-heading">Pop-up info</h3></a>
+			<a data-target="#logIn" data-toggle="modal" class="list-group-item list-group-item-success"> <h4 class="list-group-item-heading">Log in</h3></a>
+			<a data-target="#signUp" data-toggle="modal"class="list-group-item list-group-item-info"> <h4 class="list-group-item-heading">Sign up</h3></a>
+			<a href="" class="list-group-item list-group-item-warning" data-toggle="modal" data-target="#trackerInfo"> <h4 class="list-group-item-heading">Tracker info</h3></a>
 		</div>
 
 		<!-- Modal -->
-		<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade bs-example-modal-sm" id="trackerInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-sm">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">
 							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
 						</button>
-						<h4 class="modal-title" id="myModalLabel">Tracker and profile info</h4>
+						<h4 class="modal-title" id="trackerInfo">Tracker and profile info</h4>
 					</div>
 					<div class="modal-body">
 						(info about how account data is processed)

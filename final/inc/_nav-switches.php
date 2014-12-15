@@ -16,17 +16,12 @@ switch ($action . '_' . $method) {
 		$controller = "index.php";
 		$view = "index/tracker.php";
 		break;
-	case 'about-us_GET':
+	case 'tracker_GET':
 		$controller = "index.php";
-		$view = "index/about-us.php";
+		$view = "index/tracker.php";
 		break;
-		
-	case 'tracker-login_GET':
+	case 'tracker-success_GET':
 		$controller = "tracker.php";
-		$view = "tracker/tracker-login.php";
-		break;
-	case 'tracker-signup_GET':
-		$controller = "tracker.php";
-		$view = "tracker/tracker-signup.php";
+		$view = "tracker/tracker-success.php";
 		break;
 }

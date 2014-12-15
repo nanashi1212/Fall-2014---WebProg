@@ -7,8 +7,15 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container" ng-app="trackerApp" ng-controller='trackerCtrl'>
 	<div class="row">
+		<div class="col-md-4">
+		<div class="well" ng-controller="social" >
+					<img src="http://graph.facebook.com/{{me.id}}/picture" align="left" />
+					<b>{{me.name}}</b><br>
+					{{me.email}}
+			</div>
+		</div>
 		<div class="col-md-4">
 			<h2>Calorie counter</h2>
 			<div class="form-group">
@@ -113,3 +120,19 @@
 			</ul>
 		</div>
 	</div>
+	
+	<script>
+		var trackerApp = angular.module('trackerCtrl', ['ngAnimate'])
+		trackerApp.controller('trackerCtrl', function($scope, $http){
+			
+		});
+		trackerApp.controller('social', function*(){
+			
+		});
+		
+	</script>
+	
+
+
+
+

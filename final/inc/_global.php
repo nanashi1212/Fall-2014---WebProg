@@ -23,6 +23,30 @@ function insertUser($sql){
 	}
 }
 
+function loginUser($sql){
+	$conn = GetConnection();
+	$error = $conn->error;
+	if($error){
+		echo $error;
+	}else{
+		$result = $conn->query($sql);
+		$userInfo = $result->fetch_array(MYSQLI_NUM);
+		echo($userInfo);
+		echo($result);
+		return $userInfo;
+	}
+}
+
+function insertFood($sql){
+	$conn = GetConnection();
+	$error = $conn->error;
+	if($error){
+		echo $error;
+	}else{
+		$conn->query($sql);
+	}
+}
+
 
 function FetchAll($sql){
 		$ret = array();
@@ -37,6 +61,5 @@ function FetchAll($sql){
 				$ret[] = $rs;
 			}			
 		}
-		
 		return $ret;	
 }

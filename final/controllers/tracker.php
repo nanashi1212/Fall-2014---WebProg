@@ -4,7 +4,7 @@ include_once __DIR__ . '/../inc/_all.php';
 include_once __DIR__ . '/../Models/tracker.php';
 
 $view = isset($_REQUEST['view']) ? $_REQUEST['view'] : null;
-$controller=null;
+$controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : null;
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $method = isset($_POST['submit']) ? 'POST' : 'GET';
@@ -14,10 +14,23 @@ include_once __DIR__ . '/../inc/_nav-switches.php';
 
 switch ($action . '_' . $method) {
 	case('account-created_POST'):
-		//handle signin & signup here
+		//handle signup here
 		tracker::signup();
 		my_print($_POST);
-		$view = 'tracker/tracker-signup.php';
+		$controller = "index.php";
+		$view = "index/index.php";
+		break;
+		
+	case('account-login_POST'):
+		//handle signin here
+		$userData = tracker::login();
+		$userID = $userData->fetch_array(MYSQLI_NUM);
+		if($userID)
+			$_SESSION["ID"] = $userID;
+		else 
+			$_SESSION["ERROR"] = "error!";
+		$controller = "index.php";
+		$view = "index/index.php";
 		break;
 }
 

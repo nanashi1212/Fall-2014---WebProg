@@ -14,8 +14,14 @@ class tracker
 		(`id`, `first_name`, `last_name`, `email`, `password`) 
 		VALUES ('NULL', '".($_POST['first_name'])."', '". ($_POST['last_name'])."', '"
 		 .($_POST['email'])."', '".($_POST['password'])."');";
-		 echo $sql;
 		 insertUser($sql);
 		}
+	}
+	public static function login()
+	{
+		$sql = "SELECT id FROM `WebTracker_Users` WHERE email = '" . $_POST['loginEmail']
+		. "' AND password = '" . $_POST['loginPassword'] . "'";
+		$userID = loginUser($sql);
+		return $userID;
 	}
 }

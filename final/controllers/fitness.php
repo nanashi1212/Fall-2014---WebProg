@@ -4,7 +4,7 @@ include_once __DIR__ . '/../inc/_all.php';
 include_once __DIR__ . '/../Models/fitness.php';
 
 $view = isset($_REQUEST['view']) ? $_REQUEST['view'] : null;
-$controller=null;
+$controller = null;
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $method = isset($_POST['submit']) ? 'POST' : 'GET';
